@@ -46,6 +46,11 @@ public class ReportController {
         return "report/result";
     }
 
+    @GetMapping("update")
+    public String updateReport(ReportDTO updaateReport){
+        updateReport
+    }
+
     @GetMapping("delete")
     public String deleteReport(int repNo, Model model){
 
