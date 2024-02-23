@@ -9,7 +9,6 @@ public class BloomReportApplication {
     public static void main(String[] args) {
         SpringApplication.run(BloomReportApplication.class, args);
 
-        System.out.println("report ");
     }
 
 
