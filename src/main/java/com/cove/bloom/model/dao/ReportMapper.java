@@ -9,4 +9,10 @@ import java.util.List;
 @Mapper
 public interface ReportMapper {
     List<ReportDTO> findAllReport();
+
+
+    void registReport(ReportDTO newReport);
+
+
+    void deleteReport(int repNo);
 }

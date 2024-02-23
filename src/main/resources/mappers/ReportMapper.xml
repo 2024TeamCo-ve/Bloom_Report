@@ -23,8 +23,20 @@
         FROM  report
     </select>
 
-
-
+    <insert id="registReport" parameterType="com.cove.bloom.model.dto.ReportDTO">
+        INSERT INTO report (
+        rep_mem
+        , rep_rmem
+        , rep_rea
+        , rep_date
+        )
+        VALUES(
+        #{ repMem }
+        ,#{ repRmem }
+        ,#{ repRea }
+        ,CURDATE()
+        )
+    </insert>
 
 
 
