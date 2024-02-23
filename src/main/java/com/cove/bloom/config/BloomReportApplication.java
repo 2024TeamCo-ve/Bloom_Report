@@ -1,4 +1,4 @@
-package com.cove.bloom;
+package com.cove.bloom.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,7 +9,6 @@ public class BloomReportApplication {
     public static void main(String[] args) {
         SpringApplication.run(BloomReportApplication.class, args);
 
-        System.out.println("report ");
     }
 
 

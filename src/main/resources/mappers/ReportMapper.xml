@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cove.bloom.model.dao.ReportMapper">
+
+    <insert id="registReport" parameterType="com.cove.bloom.model.dto.ReportDTO"
+    useGeneratedKeys="true" keyProperty="repNo">
+        INSERT INTO report (
+                                rep_mem
+                                , rep_rmem
+                                , rep_rea
+                                , rep_date
+                            )
+        VALUES(
+                #{ repMem }
+                ,#{ repRmem }
+                ,#{ repRea }
+                ,CURDATE()
+                )
+    </insert>
+</mapper>
