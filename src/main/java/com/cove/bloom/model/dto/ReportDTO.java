@@ -7,13 +7,20 @@ public class ReportDTO implements java.io.Serializable{
     private int repNo;
     private String repMem;
 
+
     private String repRmem;
 
     private String repRea;
 
     private Date repDate;
 
-    public ReportDTO() {
+
+
+
+
+    public ReportDTO (){
+
+
     }
 
     public ReportDTO(int repNo, String repMem, String repRmem, String repRea, Date repDate) {
@@ -66,7 +73,9 @@ public class ReportDTO implements java.io.Serializable{
 
     @Override
     public String toString() {
-        return "reportDTO{" +
+
+        return "ReportDTO{" +
+
                 "repNo=" + repNo +
                 ", repMem='" + repMem + '\'' +
                 ", repRmem='" + repRmem + '\'' +

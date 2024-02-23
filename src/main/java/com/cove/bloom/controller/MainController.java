@@ -7,7 +7,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MainController {
 
     @GetMapping("/")
+<<<<<<< HEAD
     public String defaultPage() {
+=======
+    public String defaultPage(){
+>>>>>>> origin/main
         return "main";
     }
 
