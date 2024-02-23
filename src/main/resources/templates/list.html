@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <h1>신고게시판 조회</h1>
+    <tr>
+        <th>신고번호</th>
+        <th>신호회원</th>
+        <th>피신고회원</th>
+        <th>신고사유</th>
+        <th>신고날짜</th>
+    </tr>
+    <tr th:each="report : ${ reportList }">
+        <td th:text="${ report.repNo }"></td>
+        <td th:text="${ report.repMem }"></td>
+        <td th:text="${ report.repRmem }"></td>
+        <td th:text="${ report.repRea }"></td>
+        <td th:text="${ report.repDate }"></td>
+    </tr>
+</table>
+</body>
+</html>
